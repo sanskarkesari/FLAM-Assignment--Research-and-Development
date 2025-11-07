@@ -88,7 +88,10 @@ The model successfully estimated all unknown parameters.
 The L1 distance between predicted and observed points was minimized efficiently.
 
 The resulting curve provides an accurate representation of the dataset.
-Result : <img width="686" height="547" alt="image" src="https://github.com/user-attachments/assets/5a2e92ad-1d04-41d2-a545-2325842e0ef7" />
+
+Result : 
+
+<img width="686" height="547" alt="image" src="https://github.com/user-attachments/assets/5a2e92ad-1d04-41d2-a545-2325842e0ef7" />
 
 
 ✨ Credits
