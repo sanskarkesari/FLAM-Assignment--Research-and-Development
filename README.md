@@ -1,16 +1,11 @@
-# FLAM-Assignment--Research-and-Development
+# FLAM-Assignment: Research-and-Development
 
 ## 🧮 Objective
 
 The objective of this assignment is to estimate the unknown parameters **θ**, **M**, and **X** in the following **parametric curve** equation so that it best fits the given data points in `xy_data.csv`.
 
-\[
-x = t\cos(\theta) - e^{M|t|}\sin(0.3t)\sin(\theta) + X
-\]
-
-\[
-y = 42 + t\sin(\theta) + e^{M|t|}\sin(0.3t)\cos(\theta)
-\]
+x=tcos(θ)−e^M∣t∣sin(0.3t)sin(θ)+X
+y=42+tsin(θ)+e^M∣t∣sin(0.3t)cos(θ)
 
 Where:  
 - **θ (theta)** = angular rotation (in degrees)  
@@ -27,14 +22,10 @@ Where:
 Step 1 – Data Loading
 
 The dataset xy_data.csv contains two columns (x and y).
-Since the parameter 
-𝑡
-t was not provided, it was uniformly generated between 6 and 60 using:
+Since the parameter t was not provided, it was uniformly generated between 6 and 60 using:
 
 t = np.linspace(6, 60, len(df))
-This ensures that each point corresponds to an evenly spaced 
-𝑡
-t value.
+This ensures that each point corresponds to an evenly spaced t value.
 t = np.linspace(6, 60, len(df))
 Step 2 – Defining the Curve
 
@@ -73,6 +64,7 @@ bounds = [(0, 50), (-0.05, 0.05), (0, 100)]
 result = minimize(loss, initial_guess, args=(t, x_obs, y_obs), bounds=bounds, method='L-BFGS-B
 This finds the parameter set that minimizes the L1 distance.
 
+```
 📊 Results
 
 After optimization, the following best-fit parameter values were obtained:
@@ -84,7 +76,8 @@ After optimization, the following best-fit parameter values were obtained:
 | Horizontal Shift   | X      | **54.8998**   |
 
 🧩 Final Parametric Equation: 
-(tcos(28.1187)−e0.02139∣t∣sin(0.3t)sin(28.1187)+54.8998,42+tsin(28.1187)+e0.02139∣t∣sin(0.3t)cos(28.1187))
+x= (tcos(28.1187)−e^0.02139∣t∣sin(0.3t)sin(28.1187)+54.8998
+y= 42+tsin(28.1187)+e^0.02139∣t∣sin(0.3t)cos(28.1187))
 
 🏁 Conclusion
 
