@@ -65,7 +65,7 @@ result = minimize(loss, initial_guess, args=(t, x_obs, y_obs), bounds=bounds, me
 This finds the parameter set that minimizes the L1 distance.
 
 ```
-📊 Results
+## 📊 Results
 
 After optimization, the following best-fit parameter values were obtained:
 
@@ -75,11 +75,12 @@ After optimization, the following best-fit parameter values were obtained:
 | Exponential Factor | M      | **0.02139**   |
 | Horizontal Shift   | X      | **54.8998**   |
 
-🧩 Final Parametric Equation: 
+## 🧩 Final Parametric Equation: 
+
 x= (tcos(28.1187)−e^0.02139∣t∣sin(0.3t)sin(28.1187)+54.8998
 y= 42+tsin(28.1187)+e^0.02139∣t∣sin(0.3t)cos(28.1187))
 
-🏁 Conclusion
+## 🏁 Conclusion
 
 The model successfully estimated all unknown parameters.
 
