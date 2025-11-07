@@ -78,6 +78,7 @@ After optimization, the following best-fit parameter values were obtained:
 ## 🧩 Final Parametric Equation: 
 
 x= (tcos(28.1187)−e^0.02139∣t∣sin(0.3t)sin(28.1187)+54.8998
+
 y= 42+tsin(28.1187)+e^0.02139∣t∣sin(0.3t)cos(28.1187))
 
 ## 🏁 Conclusion
