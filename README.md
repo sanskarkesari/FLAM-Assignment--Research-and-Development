@@ -22,11 +22,19 @@ Where:
 
 ## ⚙️ Approach and Methodology
 
-### **Step 1 – Data Loading**
-The dataset `xy_data.csv` contains the observed **x** and **y** coordinates of points that lie on the curve.
 
-Since the parameter **t** is not provided, it was generated uniformly across the given range:
 ```python
+Step 1 – Data Loading
+
+The dataset xy_data.csv contains two columns (x and y).
+Since the parameter 
+𝑡
+t was not provided, it was uniformly generated between 6 and 60 using:
+
+t = np.linspace(6, 60, len(df))
+This ensures that each point corresponds to an evenly spaced 
+𝑡
+t value.
 t = np.linspace(6, 60, len(df))
 Step 2 – Defining the Curve
 
